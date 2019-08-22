@@ -5,15 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style >
+        style, head{
+         display: none;
+        }   
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            display: block;
+            name: "abc"
+        }
+    </style>
 </head>
+
 <body>
-        <form action="">
-            <fieldset>Login</fieldset>
+
+        <form action="" >
+            <fieldset >Login</fieldset>
             <input type="text" placeholder="User">
             <input type="password" placeholder="Password">
             <input type="email" >
             <input type="number" >
             <input type="date">
+            <label for="a">A</label>
+            <input type="radio" name="abc" id="a">
+            <label for="b">B</label>
+            <input type="radio" name="abc" id="b">
+            <label for="c">C</label>
+            <input type="radio" name="abc" id="c">
+            <label for="d">D</label>
+            <input type="checkbox" name="def" id="d">
+            <label for="e">E</label>
+            <input type="checkbox" name="def" id="e">
+            <label for="f">F</label>
+            <input type="checkbox" name="def" id="f">
+            <select name="" id="">
+                <option value="Hola">Prueba1</option>
+                <option value="como">Prueba2</option>
+                <option value="estas">Prueba3</option>
+            </select>
+            
+            <select name="" id="" multiple>
+                    <option value="Hola">Prueba4</option>
+                    <option value="como">Prueba5</option>
+                    <option value="estas">Prueba6</option>
+            </select>
+
+
+
             <input type="submit" value="Submit">
         </form>
 </body>

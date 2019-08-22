@@ -16,3 +16,15 @@ body  nav ul li {
 body  nav ul{
     list-style: none;
 }
+
+header {
+    background-color: aqua;
+}
+
+nav {
+    background-color: red;
+}
+
+footer{
+    background-color: green;
+}

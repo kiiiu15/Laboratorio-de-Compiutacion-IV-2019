@@ -1,0 +1,35 @@
+*  {
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+
+color: pink;
+}
+
+header,nav,footer{
+    display: block;
+    background-color: blue;
+    
+}
+
+aside, section, article {
+    
+    background-color: blueviolet;
+    float: left;
+    
+
+}
+aside, section {
+    display: inline-block;
+}
+aside{
+   width: 30%;
+   
+}
+
+section {
+    width: 70%;
+}
+footer {
+    clear: left;
+}

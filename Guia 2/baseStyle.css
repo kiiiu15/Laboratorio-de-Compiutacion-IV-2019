@@ -2,6 +2,7 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    
   }
   
   body {
@@ -34,16 +35,21 @@
     border: 1px solid #3ac162;
     border-width: 1px 1px 3px;
     box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+    width: 45%;
   }
 
   button:hover{
       background-color: #48a564;
   }
-  
+
   label {
     display: contents;
     margin-bottom: 8px;
+    
   }
+
+  
+  
 
   .number {
     height: 30px;
@@ -62,4 +68,8 @@
       max-width: 500px;
     }
   
+  }
+
+  .abajo {
+    display: block;
   }

@@ -8,17 +8,49 @@
     <link rel="stylesheet" href="baseStyle.css">
 </head>
 <body>
-    <form action="action.php" name="formulario">
-        <label for="nombre">Name</label>
-        <input type="text" name="nombre">
-        <label for="mail">Email</label>
-        <input type="email" name="mail">
-        <label for="pass">Password</label>
-        <input type="password" name="pass">
-        <label for="bday">Birthday</label>
-        <input type="date" name="bday">
-        <label for="nombre">Sex: </label>
-        <input type="text" name="nombre">
+    <form action="action.php" name="formulario" method="GET">
+        <label for="nombre" class="abajo">Name</label>
+        <input type="text" name="nombre" class="abajo">
+        <label for="mail" class="abajo">Email</label>
+        <input type="email" name="mail" class="abajo">
+        <label for="pass" class="abajo">Password</label>
+        <input type="password" name="pass" class="abajo">
+        <label for="bday" class="abajo">Birthday</label>
+        <input type="date" name="bday" class="abajo">
+        <label for="" >Sex: </label>
+        <label for="male" >Male</label>
+        <input type="radio" name="male">
+        <label for="female" >Female</label>
+        <input type="radio" name="female">
+
+
+
+        <label for="" class="abajo">Your profile</label>
+        <label for="about_you" class="abajo">About you</label>
+        <textarea name=" about_you"  class="abajo"></textarea>
+
+        <label for="roles" class="abajo">Role</label>
+        <select name="roles" class="abajo">
+            <option value="Programador">Programador</option>
+            <option value="Desarrolador">Desarrolador</option>
+        </select>
+
+        <label for="" class="abajo">Interes</label>
+        <label for="DataBase">DataBase</label>
+        <input type="checkbox" name="DataBase">
+        <label for="Design">Design</label>
+        <input type="checkbox" name="Design">
+        <label for="Bussiness">Bussiness</label>
+        <input type="checkbox" name="Bussiness">
+        <label for="ui">Unit Test</label>
+        <input type="checkbox" name="ui">
+        <label for="cd">Cloud Development</label>
+        <input type="checkbox" name="cd">
+        <label for="wd">Web Development</label>
+        <input type="checkbox" name="wd">
+        <br>
+        <button type="submit" name="submitbutton">Send</button>
+        <button type="reset" name="resetbutton">Reset</button>
     </form>
 </body>
 </html>

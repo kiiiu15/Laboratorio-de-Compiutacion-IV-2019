@@ -126,17 +126,32 @@
 
     //d.	Redúzcalo hasta obtener un arreglo de edades únicamente.
     var_dump ($people);
-    foreach ($people as $value){
+    foreach ($people as $key => $value){
         //var_dump($value);
-        foreach ($value as $key => $value2){
-            if ($key != 'age'){
-                $prueba = $value [$key];
-                var_dump ($prueba);
-                unset($prueba);
+        foreach ($value as $key2 => $value2){
+            if ($key2 != 'age'){
+                unset($value[$key][$key2]);
             } 
         }
     }
     echo "<br/>";
 
     var_dump ($people);
+
+    echo "<br/>";
+
+    echo "<hr/>";
+
+    // 6.	Confeccione un documento php donde se procese e imprima por pantalla el día de la semana en la que se encuentra. (Investigue function date() )
+    //Por ejemplo: “El día de la semana es : xxxxx ”
+    $date = date ('l');
+    if ($date == 'Saturday'|| $date == 'Sunday'){
+        echo "Es Fin de Semana";
+    } else {
+        echo "Hoy es " . $date;
+    }
+
+
+
+
 ?>

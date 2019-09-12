@@ -161,7 +161,7 @@
 
 ?>
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -182,30 +182,61 @@
             <input type="submit" value=Submit>
         </form>
 </body>
-</html>
+</html> -->
 
 <?php
-
-    $arreglo = $_POST;
-    var_dump ($arreglo);
-    $total_sale = $arreglo ['precioTotal'];
-    $type_sale = $arreglo ['tipoCompra'] ;
-    if ($total_sale < 200){
-        if ($type_sale == 'mascotas'){
-            echo "No se puede realizar el envío";
+/*-
+    if ($_POST){
+        $arreglo = $_POST;
+        var_dump ($arreglo);
+        $total_sale = $arreglo ['precioTotal'];
+        $type_sale = $arreglo ['tipoCompra'] ;
+        if ($total_sale < 200){
+            if ($type_sale == 'mascotas'){
+                echo "No se puede realizar el envío";
+            } else {
+                echo "Los gastos de envío son 80 pesos";
+            }
         } else {
-            echo "Los gastos de envío son 80 pesos";
-        }
-    } else {
-        if ($total_sale >= 200 && $total_sale < 600){
-            echo "Los gastos de envío son 80 pesos";
-        }else{
-            echo "Los gastos de envío son gratis!";
-            if ($total_sale >= 2000){
-                echo "<br/> Gracias por su gran compra, por guarde este numero de cupon para obtener un descuento en su proxima compra: CODEDESC33";
+            if ($total_sale >= 200 && $total_sale < 600){
+                echo "Los gastos de envío son 80 pesos";
+            }else{
+                echo "Los gastos de envío son gratis!";
+                if ($total_sale >= 2000){
+                    echo "<br/> Gracias por su gran compra, por guarde este numero de cupon para obtener un descuento en su proxima compra: CODEDESC33";
+                }
             }
         }
     }
+    echo "<br/>
+
+    <hr/>
+
+    <br/>";
+    
+    //8.	Se nos pide realizar un script que indique cual es el mayor de 4 números, es decir, se definen cuatro números enteros y debemos mostrar un mensaje con el mayor de los cuatro. Las variables con los cuatro números serán $a, $b, $c y $d.
+    //Dato: (valide el script intercambiando los valores de todas las variables).
     
 
+
+    $a=15; $b=20; $c=16; $d=454;
+
+    $array = [$a, $b,$c,$d] ;
+
+    echo "EL mas grande " . max($array) ;*/
+
+    /*9.	Cree una pequeña página web que contenga un formulario con tres input de texto para poder rellenar la información de una nueva persona (como las del ejercicio 5). Este formulario debe enviarse a otro script php, quien debe mostrar una tabla bien formada.
+
+    10.	Si no lo hizo en el ejercicio anterior, valide que los datos ingresados sean correctos. Si no lo son, debe volver a la página anterior.
+    */
+
 ?>
+
+    <form action="registroEj&10.php" method="POST">
+        <input type="text" name = "nombre" placeholder="nombre">
+        <input type="text" name = "apellido" placeholder="apellido">
+        <input type="text" name = "dni" placeholder="dni">
+        <input type="submit" value="Registrarse">
+    </form>
+    <br/>
+    <hr>

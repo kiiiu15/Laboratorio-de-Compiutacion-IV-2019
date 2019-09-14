@@ -89,4 +89,18 @@ echo "<br/> <hr/> <br/>";
     mostrarKeyArray ($arrayAssociative, 1);
 
     echo "<br/> <hr/> <br/>";
+
+//4.	Armar una función que dado el $array arrayAssociative., retorne todas sus claves en un string separado por comas. Mostrar string por pantalla al llamar a la función.
+
+    function arrayKeysToString ($array) {
+        $strToReturn = "";
+        foreach ($array as $key => $value ) {
+            $strToReturn = $strToReturn . "," . $key; 
+        }
+
+        return $strToReturn;
+    }
+
+    echo arrayKeysToString($arrayAssociative);
+
 ?>

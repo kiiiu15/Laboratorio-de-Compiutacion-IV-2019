@@ -66,5 +66,27 @@ echo "<br/> <hr/> <br/>";
 
     echo "<br/> <hr/> <br/>";
 
-    
+// 3.	Hacer una función que reciba una key y un array y luego de verificar si esa key existe en dicho arreglo, muestre el valor asociado a la misma.
+
+    function existeKeyArray ($array , $key) {
+        foreach ($array as $key2 => $value ) {
+            if ( $key2 ==  $key ) {
+                return true;
+            }
+        }
+
+        return false ; 
+    } 
+
+    function mostrarKeyArray ($array , $key) {
+        if (existeKeyArray($array, $key)) {
+            echo $array[$key];
+        } else {
+            echo "La clave no se encuentra en el array " ;
+        }
+    }
+
+    mostrarKeyArray ($arrayAssociative, 1);
+
+    echo "<br/> <hr/> <br/>";
 ?>

@@ -1,4 +1,6 @@
 <?php
+
+    namespace modelo;
     abstract class  Person {
         private $id;
         private $firstName;
@@ -47,7 +49,7 @@
         }
 
 
-        public function _construct ($id => "" , $firstName => "" , $lastName => "" , $dni => "" , $email => "" ) {
+        public function __construct ($id = "" , $firstName = "" , $lastName = "" , $dni = "" , $email = "" ) {
             setId($id);
             setFirstName($firstName);
             setLastName($lastName);

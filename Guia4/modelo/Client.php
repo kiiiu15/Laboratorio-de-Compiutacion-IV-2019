@@ -1,5 +1,5 @@
 <?php
-
+    namespace modelo;
     class Client {
         private $userName;
         private $password;
@@ -20,9 +20,10 @@
             $this->password = $password;
         }
 
-        public function _construct ($userName => "" , $password => "" ) {
-            setUserName($userName);
-            setPassword($password);
+        public function __construct ($userName = "" , $password = "" ) {
+            $this->setUserName($userName);
+            $this->setPassword($password);
+            
         }
     }
 

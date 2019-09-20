@@ -1,5 +1,5 @@
 <?php
-
+    namespace modelo;
     class Bill {
         private $date;
         private $type;
@@ -29,10 +29,10 @@
             $this->number = $number;
         }
 
-        public function _construct ($date => new Date(), $type => "" , $number => "0" ) {
-            setDate($date);
-            setType($type);
-            setNumber($number);
+        public function __construct ($date = "" , $type = "" , $number = 0 ) {
+            $this->setDate($date);
+            $this->setType($type);
+            $this->setNumber($number);
         } 
         
     

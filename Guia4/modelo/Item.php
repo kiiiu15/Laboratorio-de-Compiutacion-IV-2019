@@ -1,4 +1,5 @@
 <?php
+    namespace modelo;
     class Item {
         private $name; 
         private $description; 
@@ -37,7 +38,7 @@
             $this->quantity = $quantity;
         }
 
-        public function _construct ($name  => "" , $description => "", $price => 0 , $quantity => 0) {
+        public function __construct ($name  = "" , $description = "", $price = 0 , $quantity = 0) {
             setName($name);
             setDescription($description);
             setPrice($price);

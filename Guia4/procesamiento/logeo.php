@@ -11,7 +11,7 @@
             $cliente = new Client ($userName, $passWord);
             session_start();
             $_SESSION[]=$cliente;
-            var_dump($_SESSION);
+            
 
             header ("location: ../vista/add-bill.php");
         }

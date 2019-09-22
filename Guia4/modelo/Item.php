@@ -39,10 +39,10 @@
         }
 
         public function __construct ($name  = "" , $description = "", $price = 0 , $quantity = 0) {
-            setName($name);
-            setDescription($description);
-            setPrice($price);
-            setQuantity($quantity);
+            $this->setName($name);
+            $this->setDescription($description);
+            $this->setPrice($price);
+            $this->setQuantity($quantity);
         }
     }
 ?>

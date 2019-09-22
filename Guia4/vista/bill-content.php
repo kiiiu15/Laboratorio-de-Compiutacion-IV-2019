@@ -1,4 +1,8 @@
+<?php include "header.php";
+     session_start();
+     var_dump($_SESSION);
 
+?>
 <main class="py-5">
      <section id="listado" class="mb-5">
           <div class="container">
@@ -53,3 +57,4 @@
 
 </main>
 
+<?php include "footer.php";?>

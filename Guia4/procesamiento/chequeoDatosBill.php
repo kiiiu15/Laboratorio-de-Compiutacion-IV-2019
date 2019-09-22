@@ -13,12 +13,11 @@
             if (empty($tipoFactura) || empty($numeroFactura)){
                 header("location: ../vista/add-bill.php");
             } else {
-                var_dump($_SESSION);
+                session_start();
                 $bill = new Bill ($fechaFactura , $tipoFactura , $numeroFactura);
-                
-
                 $_SESSION[] = $bill;
-                var_dump($_SESSION);
+
+                header ("location: generacionItemsBill.php");
             }
         }
     }

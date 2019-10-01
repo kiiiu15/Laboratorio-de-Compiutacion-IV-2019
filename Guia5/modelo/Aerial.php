@@ -1,7 +1,7 @@
 <?php
     namespace modelo;    
-    require ("autoload.php");
-
+    require ("../autoload.php");
+   
     use modelo\Transport as Transport; 
     class Aerial extends Transport {
         private $engineQuantity;

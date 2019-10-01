@@ -1,0 +1,51 @@
+[
+    {
+        "name": "Agostina",
+        "dni": "12345678",
+        "birthdate": "2017-04-28",
+        "email": "agos@utn.com",
+        "pass": "asd123"
+    },
+    {
+        "name": "Valentina",
+        "dni": "23456789",
+        "birthdate": "2012-09-11",
+        "email": "valen@utn.com",
+        "pass": "asd123"
+    },
+    {
+        "name": "Mailen",
+        "dni": "34567890",
+        "birthdate": "2005-06-15",
+        "email": "may@utn.com",
+        "pass": "asd123"
+    },
+    {
+        "name": "Ludmila",
+        "dni": "45678901",
+        "birthdate": "1984-04-10",
+        "email": "ludmila@utn.com",
+        "pass": "asd123"
+    },
+    {
+        "name": "Adrian",
+        "dni": "56789012",
+        "birthdate": "1983-04-13",
+        "email": "adrian@utn.com",
+        "pass": "asd123"
+    },
+    {
+        "name": "hola",
+        "dni": "41106429",
+        "birthdate": "2019-09-23",
+        "email": "ramirocambre@hotmail.com",
+        "pass": "123"
+    },
+    {
+        "name": "Agustin",
+        "dni": "42569190",
+        "birthdate": "2019-09-25",
+        "email": "tinbulzomi@hotmail.com",
+        "pass": "123"
+    }
+]
